@@ -1,0 +1,25 @@
+-- Active: 1743639780257@@127.0.0.1@5432@ph
+SELECT * FROM persion1;
+
+ALTER TABLE persion1
+ADD COLUMN email VARCHAR(25) DEFAULT 'defult@gmail.com' NOT NULL;
+
+ALTER TABLE persion1
+DROP COLUMN email
+
+INSERT INTO persion1 VALUES (6,'test',21)
+
+ALTER TABLE persion1
+RENAME COLUMN user_ege to user_age;
+
+ALTER TABLE persion1
+ALTER COLUMN user_name TYPE VARCHAR(50)
+
+ALTER TABLE persion1
+ALTER COLUMN user_age set  NOT NULL
+
+
+ALTER TABLE persion1
+ALTER COLUMN user_age DROP NOT NULL
+
+TRUNCATE TABLE persion1

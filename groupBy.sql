@@ -1,0 +1,2 @@
+-- Active: 1743639780257@@127.0.0.1@5432@ph
+SELECT * FROM students
